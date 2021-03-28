@@ -1,0 +1,221 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "User1",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 2,
+      "name": "User2",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 3,
+      "name": "User3",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 4,
+      "name": "User4",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 5,
+      "name": "User5",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 6,
+      "name": "User6",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 7,
+      "name": "User7",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": true
+    },
+    {
+      "id": 8,
+      "name": "User8",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 9,
+      "name": "User9",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 10,
+      "name": "User10",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 11,
+      "name": "User11",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 12,
+      "name": "User12",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 13,
+      "name": "User13",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 14,
+      "name": "User14",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 15,
+      "name": "User15",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    }
+    ,{
+      "id": 16,
+      "name": "User16",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 17,
+      "name": "User17",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    },
+    {
+      "id": 18,
+      "name": "User18",
+      "email": "user@user.com",
+      "date": {
+        "registration": "10/02/2020",
+        "lastActions": "10/02/2020"
+      },
+      "lastActions": "view_landing_coursel",
+      "product": "Как наладить отношения",
+      "is_block": false
+    }
+  ],
+  "period": {}
+}

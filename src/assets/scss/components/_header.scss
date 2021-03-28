@@ -1,0 +1,137 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$link__bgr:         $white;
+$link__bgr_gray:    $gray-light;
+$link__color:       $black;
+$link__color_hover: $orange;
+$link__fs:          14px;
+$link__lh:          17px;
+$link__fw:          bold;
+
+/*-----------------------------*/
+/*         header          */
+/*-----------------------------*/
+.header {
+  position: relative;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+/*-----------------------------*/
+/*         navbar           */
+/*-----------------------------*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // .navbar__brand
+  &__brand {
+    margin-left: -10px;
+  }
+
+  // .navbar__nav-list
+  &__nav-list {
+    margin: 0 -8.5px;
+  }
+
+}
+.brand {
+  display: flex;
+  align-items: flex-start;
+  padding: 11px 10px;
+
+		// .brand__icon
+		&__icon {
+      margin-right: 8.79px;
+    }
+
+    & span {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 140%;
+      color: $link__color;
+    }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+		// .nav-list__item
+		&__item {
+      padding: 0 8.5px;
+      font-size: $link__fs;
+      font-weight: $link__fw;
+      line-height: $link__lh;
+      color: $black;
+    }
+
+		// .nav-list__link
+		&__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 43px;
+      height: 43px;
+      background-color: $link__bgr;
+      box-shadow: 0px 10px 40px rgba(213, 221, 230, 0.6);
+      border-radius: 50%;
+    }
+
+}
+
+.account,
+.langs {
+  button {
+    display: flex;
+    align-items: center;
+    font-size: $link__fs;
+    font-weight: $link__fw;
+    line-height: $link__lh;
+    border-radius: 100px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $link__color_hover
+    }
+  }
+}
+
+.search .nav-list__link,
+.langs button {
+  background-color: $link__bgr_gray;
+  .arrow {
+    width: 8.29px;
+    height: 4.8px;
+  }
+}
+
+.account {
+  button {
+    padding: 12px 18.783px 14px 27px;
+    background-color: $link__bgr;
+    box-shadow: 0px 10px 40px rgba(213, 221, 230, 0.6);
+    .arrow {
+      margin-left: 15px;
+    }
+  }
+}
+
+.search {
+  .nav-list__link {
+    box-shadow: none;
+  }
+}
+
+.langs {
+  button {
+    padding: 12px 13.81px 14px 14px;
+    .arrow {
+      margin-left: 8px;
+    }
+  }
+}

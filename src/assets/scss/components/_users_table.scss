@@ -1,0 +1,134 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$table__bg:                $white;
+$table__border:            $gray-6;
+$table__lh:                130%;
+
+/*-----------------------------*/
+/*         action-panel        */
+/*-----------------------------*/
+.users-table {
+  padding: 20px 43px 20px 32px;
+  background-color: $table__bg;
+  border-radius: 10px;
+
+  // .users-table__header
+  &__header {
+    margin-top: -17.5px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid $table__border;
+
+    & .users-table__column_data {
+      padding: 4px 2px 2px 16px;
+
+      &:hover {
+        padding: 4px 2px 2px 16px;
+        border: none;
+      }
+    }
+
+    & .users-table__text {
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+
+  // .users-table__body
+  &__body {
+    padding: 12px 0;
+  }
+
+  // .users-table__row
+  &__row {
+    display: flex;
+    align-items: center;
+    &:not(.users-table__header):hover .users-table__column_data {
+      padding: 7px 0 0 14px;
+      border: 2px solid $table__border;
+      border-radius: 5px;
+    }
+  }
+
+  // .users-table__column
+  &__column {
+    // .users-table__column_checkbox
+    &_checkbox {
+      flex: 0 0 48px;
+      padding-right: 22px;
+    }
+
+    // .users-table__column_data
+    &_data {
+      flex: 0 0 986px;
+      display: flex;
+      align-items: stretch;
+      padding: 9px 2px 2px 16px;
+    }
+
+    // .users-table__column_settings
+    &_settings {
+      flex: 0 0 160px;
+      & .btn-arrow {
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: -23px;
+        padding: 17.5px 0 17px 20px;
+        &__text:not(.btn-arrow__text_add) {
+          font-size: 13px;
+        }
+        & span:not(:last-child) {
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+
+  // .users-table__subcolumn
+  &__subcolumn {
+    position: relative;
+    flex: 0 0 202px;
+    width: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    &:nth-child(2) {
+      flex: 0 0 175px;
+      width: 175px;
+    }
+    &:last-child {
+      flex: 0 0 187px;
+      width: 187px;
+    }
+    &:nth-last-child(2),
+    &:last-child {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 84px;
+        height: 100%;
+        background: linear-gradient(270deg, #FFFFFF 53.27%, rgba(255, 255, 255, 0) 115.44%);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  // .users-table__text
+  &__text {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: $table__lh;
+    white-space: nowrap;
+  }
+
+  // .users-table__subtext
+  &__subtext {
+    display: block;
+    margin-top: 7px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,57 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$panel__bg:              $white;
+
+/*-----------------------------*/
+/*         action-panel        */
+/*-----------------------------*/
+.action-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 20px 21px;
+  background-color: $panel__bg;
+  border-radius: 7px;
+
+  // .action-panel__filters
+  &__filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -6px;
+
+    & .btn-arrow {
+      padding: 8.75px 23px 8px 20px;
+    }
+  }
+
+  // .action-panel__btn-filter
+  &__btn-filter {
+    & .btn-arrow__text {
+      margin-right: 7px;
+    }
+  }
+
+  // .action-panel__icon
+  &__icon {}
+
+  // .action-panel__svg
+  &__svg {}
+
+  // .action-panel__auploads
+  &__auploads {}
+
+  // .action-panel__btn
+  &__btn {
+    padding: 10px 17px 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+
+    &.btn_orange {
+      margin-left: 11px;
+      padding: 12px 17px 12px 33px;
+    }
+  }
+}

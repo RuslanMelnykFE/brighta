@@ -1,0 +1,49 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$label__bg:              $white;
+
+/*-----------------------------*/
+/*         checkbox            */
+/*-----------------------------*/
+.checkbox-field {
+  position: relative;
+  width: 26px;
+  height: 26px;
+
+  // .checkbox-field__input
+  &__input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+
+    &:checked + .checkbox-field__label::before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  // .checkbox-field__label
+  &__label {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgba(131, 142, 157, 0.3);
+    background-color: $label__bg;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 70%;
+      height: 70%;
+      background-color: rgba(131, 142, 157, 0.3);
+      border-radius: 50%;
+      transition: all .3s ease-in-out;
+    }
+  }
+}

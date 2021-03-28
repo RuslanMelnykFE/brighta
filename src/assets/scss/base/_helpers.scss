@@ -1,0 +1,101 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$body__bg:               $blue-light;
+$default__color:           $black;
+$default__color_hover:     $orange;
+
+/*-----------------------------*/
+/*                             */
+/*-----------------------------*/
+body {
+  padding: 0 38px;
+  background-color: $blue-light;
+  overflow: hidden;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  width: 11px;
+  height: 6px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    width: 75%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: $default__color;
+    transition: all .3s ease-in-out;
+  }
+
+  &::before {
+    left: -1px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    right: -1px;
+    transform: rotate(-45deg);
+  }
+}
+
+svg path {
+  transition: all .3s ease-in-out;
+}
+
+a {
+  color: $default__color;
+  transition: all .3s ease-in-out;
+
+  & * {
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover {
+    color: $default__color_hover;
+
+    & * {
+      color: $default__color_hover !important;
+    }
+    svg path {
+      fill: $default__color_hover;
+    }
+  }
+}
+
+button {
+  color: $default__color;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  & * {
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover {
+    & * {
+      color: $default__color_hover;
+    }
+    svg path {
+      fill: $default__color_hover;
+    }
+    .arrow {
+      &::before,
+      &::after {        
+        background-color: $default__color_hover;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

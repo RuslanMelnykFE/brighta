@@ -1,0 +1,91 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$btn__fs:                  12px;
+$btn__fs_arrow:            15px;
+$btn__fs_add:              15px;
+$btn__lh:                  150%;
+$btn__lh_arrow:            130%;
+$btn__fw:                  600;
+$btn__fw_arrow:            500;
+$btn__color:               $black;
+$btn__color_hover:         $white;
+$btn__color_white:         $white;
+$btn__bg:                  $white;
+$btn__bg_hover:            $black;
+$btn__bg_orange:           $orange;
+$btn__bg_orange_hover:     $orange-1;
+$btn__bg_orange_disabled:  $orange-light;
+
+/*-----------------------------*/
+/*         button custom       */
+/*-----------------------------*/
+.btn {
+  min-width: 45px;
+  padding: 11px;
+  font-size: $btn__fs;
+  font-weight: $btn__fw;
+  line-height: $btn__lh;
+  color: $btn__color;
+  background-color: $btn__bg;
+  border: 2px solid $btn__color;
+  border-radius: 7px;
+  &:hover {
+    color: $btn__color_hover;
+    background-color: $btn__bg_hover;
+  }
+
+  &_orange {
+    padding: 13px;
+    color: $btn__color_white;
+    background-color: $btn__bg_orange;
+    border: none;
+
+    &:hover {
+      background-color: $btn__bg_orange_hover;
+    }
+
+    &:disabled {
+      background-color: $btn__bg_orange_disabled;
+    }
+  }
+}
+
+/*-----------------------------*/
+/*         button arrow        */
+/*-----------------------------*/
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 17.5px 23px 17px 20px;
+
+  // .btn-arrow__icon 
+  &__icon {
+    display: block;
+    margin-right: 19.5px;
+  }
+
+  // .btn-arrow__text
+  &__text {
+    display: block;
+    margin-right: 8px;
+    font-size: $btn__fs_arrow;
+    font-weight: $btn__fw_arrow;
+    line-height: $btn__lh_arrow;
+
+    // .btn-arrow__text_add
+    &_add {
+      display: block;
+      margin-right: 8px;
+      font-size: $btn__fs_arrow;
+      font-weight: $btn__fw_arrow;
+      line-height: $btn__lh_arrow;
+    }
+  }			
+
+  // .btn-arrow__arrow
+  &__arrow {
+    display: block;
+  }
+}

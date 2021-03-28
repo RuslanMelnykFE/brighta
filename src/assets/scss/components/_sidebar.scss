@@ -1,0 +1,107 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$sidebar__bg:           $white;
+$border__color:         $gray-6;
+$border__color_hover:    $orange;
+
+/*-----------------------------*/
+/*         sidebar             */
+/*-----------------------------*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 38px;
+  bottom: 0;
+  width: 100%;
+  max-width: 233px;
+  padding-top: 101px;
+
+  // .sidebar__type-users
+  &__type-users {
+    margin-bottom: 11px;
+  }
+
+  // .sidebar__list
+  &__list {
+    max-width: 177px;
+    padding: 9px 9px 1px 10px;
+    background-color: $sidebar__bg;
+    box-shadow: 0px 10px 40px rgba(128, 158, 191, 0.2);
+    border-radius: 10px
+  }
+
+  // .sidebar__item
+  &__item {
+    margin-bottom: 8px;
+  }
+
+  // .sidebar__link
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 85px;
+    padding: 11px 16px;
+    text-align: center;
+    border: 1px solid $border__color;
+    border-radius: 6px;
+
+    &:hover {
+      border: 1px solid $border__color_hover;
+    }
+  }
+
+  // .sidebar__icon
+  &__icon {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  // .sidebar__svg
+  &__svg {
+    display: block;
+    margin: auto;
+  }
+}
+
+/*-----------------------------*/
+/*         type-users             */
+/*-----------------------------*/
+.type-users {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: $sidebar__bg;
+  box-shadow: 0px 10px 40px rgba(128, 158, 191, 0.2);
+  border-radius: 10px;
+
+  // .type-users__btn
+  &__btn {
+    justify-content: space-between;
+    width: 177px;
+    color: $balck-1;
+    background: $sidebar__bg;
+    box-shadow: 0px 10px 40px rgba(128, 158, 191, 0.2);
+    border-radius: 10px;
+
+    & .btn-arrow__text {
+      font-family: $pt-sans;
+      font-weight: bold;
+    }
+  }
+
+  // .type-users__icon
+  &__icon {
+    display: block;
+    padding: 16px 19px 14px 16px
+  }
+
+  // .type-users__svg
+  &__svg {
+    display: block;
+    max-width: 24px;
+  }
+}

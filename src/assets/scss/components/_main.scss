@@ -1,0 +1,46 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$scrollbar__bg:         $gray-3;
+$scrollbar__thumb:      $gray-2;
+
+/*-----------------------------*/
+/*         Main                */
+/*-----------------------------*/
+.main {
+  position: relative;
+  margin-top: 38px;
+  margin-left: -38px;
+  padding: 0 227px 0 38px;
+  box-sizing: border-box;
+  overflow-x: auto;
+
+  /* scrollbar Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar__thumb $scrollbar__bg;
+
+  /* scrollbar IE */
+  scrollbar-base-color: $scrollbar__thumb;
+  scrollbar-3dlight-color: transparent;
+  scrollbar-highlight-color: $scrollbar__thumb;
+  scrollbar-track-color: $scrollbar__bg;
+  scrollbar-arrow-color: transparent;
+  scrollbar-shadow-color: $scrollbar__thumb;
+
+  &__container {
+    width: 100%;
+    padding-bottom: 80px;
+    padding-left: 340px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: $scrollbar__bg;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar__thumb;
+    border-radius: 100px;
+  }
+}

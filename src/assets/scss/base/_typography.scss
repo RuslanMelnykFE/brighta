@@ -1,0 +1,19 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$document__ff: $montserrat;
+$document__fs: 15px;
+$document__fw: 500;
+$document__lh: 130%;
+
+/*-----------------------------*/
+/*                             */
+/*-----------------------------*/
+html,
+body,
+* {
+  font-family: $document__ff;
+  font-weight: $document__fw;
+  font-size: $document__fs;
+  line-height: $document__lh;
+}
