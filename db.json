@@ -217,5 +217,11 @@
       "is_block": false
     }
   ],
-  "period": {}
+  "period": {
+    "selectPeriod": "today",
+    "periodDays": {
+      "to": "",
+      "from": ""
+    }
+  }
 }

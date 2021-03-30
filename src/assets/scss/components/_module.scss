@@ -2,8 +2,10 @@
 @import 'main';
 @import 'buttons';
 @import './form_elements/module_form';
+@import 'modal';
 
 //--------- Components ----------
 @import 'sidebar';
 @import 'action_panel';
 @import 'users_table';
+@import 'calendar';

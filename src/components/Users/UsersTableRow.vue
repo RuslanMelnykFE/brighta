@@ -7,7 +7,7 @@
     </div>
     <div
       class="user-table__column users-table__column_data"
-      :class="{block: user_data.is_block}"
+      :class="{ block: user_data.is_block }"
     >
       <div
         v-for="(data, idx) in subcolumn"
@@ -15,7 +15,12 @@
         class="users-table__subcolumn"
       >
         <template v-if="idx === 'user_name'">
-          <span class="users-table__text">{{ data.name }}</span>
+          <span class="users-table__text">
+            <i v-show="user_data.is_block" class="icon-lock">
+              <icon-lock/>
+            </i>
+            {{ data.name }}
+          </span>
           <span class="users-table__subtext">{{ data.email }}</span>
         </template>
         <template v-else>
@@ -24,19 +29,38 @@
       </div>
     </div>
     <div class="users-table__column users-table__column_settings">
-      settings
+      <button
+        type="button"
+        class="users-table__btn"
+        aria-label="Button edit"
+      >
+        <icon-edit class="users-table__icon"/>
+      </button>
+      <button
+        type="button"
+        class="users-table__btn"
+        aria-label="Button delete"
+      >
+        <icon-delete class="users-table__icon"/>
+      </button>
     </div>
   </div>
 </template>
 
 <script>
 import Checkbox from '@components/FormElements/Checkbox.vue';
+import IconEdit from '@images/svg/edit.svg';
+import IconDelete from '@images/svg/delete.svg';
+import IconLock from '@images/svg/lock.svg';
 
 export default {
   name: 'UsersTableHeader',
 
   components: {
     Checkbox,
+    IconEdit,
+    IconDelete,
+    IconLock,
   },
 
   props: {

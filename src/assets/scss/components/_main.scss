@@ -11,7 +11,7 @@ $scrollbar__thumb:      $gray-2;
   position: relative;
   margin-top: 38px;
   margin-left: -38px;
-  padding: 0 227px 0 38px;
+  padding: 0 11.823vw 0 38px;
   box-sizing: border-box;
   overflow-x: auto;
 
@@ -30,7 +30,7 @@ $scrollbar__thumb:      $gray-2;
   &__container {
     width: 100%;
     padding-bottom: 80px;
-    padding-left: 340px;
+    padding-left: 17.7084vw;
   }
 
   &::-webkit-scrollbar {

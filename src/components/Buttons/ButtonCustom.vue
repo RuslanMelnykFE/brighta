@@ -4,6 +4,7 @@
     class="btn"
     :class="{'btn_orange': is_orange}"
     :disabled="is_disabled"
+    @click.prevent="$emit('action')"
   >
     {{ text }}
   </button>

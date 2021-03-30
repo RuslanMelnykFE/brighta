@@ -1,0 +1,20 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$modal__bg:              $gray-ultra;
+$modal__z-index:         1020;
+
+/*-----------------------------*/
+/*         madal               */
+/*-----------------------------*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $modal__z-index;
+  width: 100vw;
+  height: 100vh;
+  padding: 15.8334vh 17.8646vw;
+  background-color: $modal__bg;
+  backdrop-filter: blur(4px);
+}

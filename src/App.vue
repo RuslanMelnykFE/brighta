@@ -4,6 +4,7 @@
     <main-page>
       <users/>
     </main-page>
+    <modal/>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import HeaderPage from './components/Header/HeaderPage.vue';
 import MainPage from './components/Main/MainPage.vue';
 import Users from './views/Users.vue';
+import Modal from './components/Modal/Modal.vue';
 
 export default {
   name: 'App',
@@ -18,6 +20,7 @@ export default {
     HeaderPage,
     MainPage,
     Users,
+    Modal,
   },
 };
 </script>

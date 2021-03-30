@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = ' http://localhost:3000';
+const apiUrl = process.env.VUE_APP_BASE_URL;
 
 export default {
   namespaced: true,
@@ -22,7 +22,7 @@ export default {
   actions: {
     getUsers: async ({ commit }) => {
       const { data } = await axios
-        .get(`${baseUrl}/users`)
+        .get(`${apiUrl}/users`)
         .catch((error) => console.log(error));
       commit('SET_USERS', data);
     },

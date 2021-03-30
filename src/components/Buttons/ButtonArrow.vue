@@ -3,6 +3,7 @@
     type="button"
     class="btn-arrow"
     :class="{border: is_border}"
+    @click.stop.prevent="$emit('click')"
   >
     <slot/>
     <span class="btn-arrow__text">{{ text_btn }}</span>

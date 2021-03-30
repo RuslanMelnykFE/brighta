@@ -1,0 +1,225 @@
+/*-----------------------------*/
+/*         Variables           */
+/*-----------------------------*/
+$calendar__bg:            $white;
+
+$period__bg:              $gray-4;
+$period__color_border:    #ebeef3;
+$days__bg:                $gray-5;
+$days__bg_period:         rgba(255, 116, 57, 0.2);
+
+$day__bg:                 $orange;
+$day__bg_hover:           $gray-8;
+$day__color_active:       $white;
+
+
+/*-----------------------------*/
+/*         calendar            */
+/*-----------------------------*/
+.calendar-form {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  // .calendar-form__periods
+  &__periods {
+    margin-right: 8px;
+    padding: 9px 10px;
+    background-color: $calendar__bg;
+    box-shadow: 0px 10px 40px rgba(128, 158, 191, 0.2);
+    border-radius: 10px;
+  }
+}
+
+
+/*-----------------------------*/
+/*         period              */
+/*-----------------------------*/
+.period {
+  position: relative;
+
+  // .period__checkbox
+  &__checkbox {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    &:checked + .period__label {
+      background-color: $period__bg;
+    }
+  }
+
+  // .period__label
+  &__label {
+    display: block;
+    min-width: 156px;
+    padding: 12px 14px 8px;
+    font-family: $pt-sans;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    border-radius: 5px;
+
+    &:hover {
+      padding: 10px 12px 6px;
+      background: none;
+      border: 2px solid $period__color_border;
+    }
+  }
+}
+
+/*-----------------------------*/
+/*         calendar            */
+/*-----------------------------*/
+.calendar {
+  flex: 0 0 288px;
+  background-color: $calendar__bg;
+  box-shadow: 0px 10px 40px rgba(128, 158, 191, 0.2);
+  border-radius: 10px;
+
+  // .calendar__days
+  &__days {
+    width: 100%;
+    padding: 7px 0 14px;
+    background-color: $days__bg;
+  }
+
+  // .calendar__week
+  &__week {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 4px;
+
+    & .calendar__day {
+      padding: 10px 10px 6px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  // .calendar__days-list
+  &__days-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: -2px;
+    & .calendar__day {
+      position: relative;
+      flex: 0 0 calc(100% / 7);
+      width: calc(100% / 7);
+      margin-bottom: 2px;
+      text-align: center;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: $days__bg_period;
+        opacity: 0;
+      }
+
+      &.period::before,
+      &.from::before,
+      &.to::before {
+        opacity: 1;
+      }
+
+      &.period::before,
+      &.to::before {
+        left: 0;
+      }
+
+      &.from::before,
+      &.to::before {
+        width: 50%;
+      }
+
+      &.from::before {
+        right: 0;
+      }
+
+      &.today::before {
+        opacity: 0;
+      }
+
+      &.not-this {
+        opacity: .2;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // .calendar__btn-day
+  &__btn-day {
+    position: relative;
+    z-index: 2;
+    width: 28px;
+    height: 28px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: $day__bg_hover;
+    }
+
+    &.active {
+      color: $day__color_active;
+      background-color: $day__bg;
+
+      &:hover {
+        background-color: $day__bg_hover;
+        color: #000000;
+      }
+    }
+  }
+
+  // .calendar__actions
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 11px;
+
+    & .btn {
+      flex: 0 0 calc(50% - 3.5px);
+      width: calc(50% - 3.5px);
+    }
+  }
+}
+
+/*-----------------------------*/
+/*         month               */
+/*-----------------------------*/
+.month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 15.45px 15.5px 15px;
+
+  // .month__btn
+  &__btn {
+    width: 23.55px;
+    height: 23.5px;
+  }
+
+  // .month__value
+  &__value {
+    font-family: $pt-sans;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
