@@ -1,5 +1,7 @@
 <template>
-  <form class="calendar-form">
+  <form
+    class="calendar-form"
+  >
     <calendar-period
       :period_value="period_value"
       @select-period="selectPeriod"
@@ -26,7 +28,8 @@
         <button-custom
           type_btn="submit"
           :is_orange="true"
-          :is_disabled="true"
+          :is_disabled="!Boolean(form_data)"
+          @action="submitData"
           text="Обновить"
         />
       </div>
@@ -65,6 +68,7 @@ export default {
     },
     period_value: 'today',
     periods: {},
+    form_data: null,
   }),
 
   created() {
@@ -145,17 +149,24 @@ export default {
       if (day < from || day === to) {
         this.period.to = val;
         this.period.from = val;
+        this.form_data = this.period;
       }
     },
     selectPeriod(val) {
       this.period_value = val;
       this.period = this.periods[val];
+      this.form_data = this.period;
+    },
+    submitData() {
+      this.$store.dispatch('date/cahngePeriod', this.form_data);
+      this.reset();
     },
     reset() {
       this.period = {
         from: this.current_date,
         to: this.current_date,
       };
+      this.form_data = null;
       this.$store.dispatch('modal/toggleModal', { isOpen: false, name: '' });
     },
   },

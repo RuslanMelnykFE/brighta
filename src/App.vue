@@ -2,7 +2,7 @@
   <div id="app">
     <header-page/>
     <main-page>
-      <users/>
+      <router-view/>
     </main-page>
     <modal/>
   </div>
@@ -11,7 +11,6 @@
 <script>
 import HeaderPage from './components/Header/HeaderPage.vue';
 import MainPage from './components/Main/MainPage.vue';
-import Users from './views/Users.vue';
 import Modal from './components/Modal/Modal.vue';
 
 export default {
@@ -19,7 +18,7 @@ export default {
   components: {
     HeaderPage,
     MainPage,
-    Users,
+
     Modal,
   },
 };

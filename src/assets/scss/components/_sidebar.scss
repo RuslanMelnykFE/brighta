@@ -3,7 +3,8 @@
 /*-----------------------------*/
 $sidebar__bg:           $white;
 $border__color:         $gray-6;
-$border__color_hover:    $orange;
+$border__color_hover:   $orange;
+$link__color_active:    $orange;
 
 /*-----------------------------*/
 /*         sidebar             */
@@ -48,6 +49,15 @@ $border__color_hover:    $orange;
     text-align: center;
     border: 1px solid $border__color;
     border-radius: 6px;
+
+    &_active {
+      color: $link__color_active;
+      border: 1px solid $border__color_hover;
+
+      svg path {
+        fill: $link__color_active;
+      }
+    }
 
     &:hover {
       border: 1px solid $border__color_hover;

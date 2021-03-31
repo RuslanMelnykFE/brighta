@@ -179,8 +179,8 @@
       "lastActions": "view_landing_coursel",
       "product": "Как наладить отношения",
       "is_block": false
-    }
-    ,{
+    },
+    {
       "id": 16,
       "name": "User16",
       "email": "user@user.com",
@@ -218,10 +218,7 @@
     }
   ],
   "period": {
-    "selectPeriod": "today",
-    "periodDays": {
-      "to": "",
-      "from": ""
-    }
+    "from": "2021-02-28T22:00:00.000Z",
+    "to": "2021-03-30T21:00:00.000Z"
   }
 }
