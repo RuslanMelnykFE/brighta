@@ -1,5 +1,5 @@
 <template>
-  <section class="users">
+  <section style="height: 100vh">
     <h1>Empty view</h1>
   </section>
 </template>
