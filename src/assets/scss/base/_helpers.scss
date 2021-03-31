@@ -2,12 +2,38 @@
 /*         Variables           */
 /*-----------------------------*/
 $body__bg:               $blue-light;
-$default__color:           $black;
-$default__color_hover:     $orange;
+$default__color:         $black;
+$default__color_hover:   $orange;
+$scrollbar__bg:          $gray-3;
+$scrollbar__thumb:       $gray-2;
 
 /*-----------------------------*/
 /*                             */
 /*-----------------------------*/
+* {
+  /* scrollbar Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar__thumb $scrollbar__bg;
+
+  /* scrollbar IE */
+  scrollbar-base-color: $scrollbar__thumb;
+  scrollbar-3dlight-color: transparent;
+  scrollbar-highlight-color: $scrollbar__thumb;
+  scrollbar-track-color: $scrollbar__bg;
+  scrollbar-arrow-color: transparent;
+  scrollbar-shadow-color: $scrollbar__thumb;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: $scrollbar__bg;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar__thumb;
+    border-radius: 100px;
+  }
+}
 body {
   padding: 0 38px;
   background-color: $blue-light;

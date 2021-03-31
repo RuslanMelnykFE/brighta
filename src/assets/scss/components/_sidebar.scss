@@ -11,13 +11,13 @@ $link__color_active:    $orange;
 /*-----------------------------*/
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 38px;
   bottom: 0;
   width: 100%;
   max-width: 233px;
-  padding-top: 101px;
+  // padding-top: 101px;
 
   // .sidebar__type-users
   &__type-users {

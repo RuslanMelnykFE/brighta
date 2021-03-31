@@ -12,6 +12,7 @@ $table__lh:                130%;
   padding: 20px 43px 20px 32px;
   background-color: $table__bg;
   border-radius: 10px;
+  overflow-x: auto;
 
   // .users-table__header
   &__header {

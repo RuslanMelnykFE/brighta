@@ -6,7 +6,7 @@ export default {
   namespaced: true,
 
   state: {
-    period: null,
+    period: {},
   },
 
   getters: {
@@ -23,6 +23,13 @@ export default {
     cahngePeriod: async ({ commit }, period) => {
       const { data } = await axios
         .post(`${apiUrl}/period`, period)
+        .catch((error) => console.log(error));
+
+      commit('SET_PERIOD', data);
+    },
+    deletePeriod: async ({ commit }) => {
+      const { data } = await axios
+        .delete(`${apiUrl}/period`)
         .catch((error) => console.log(error));
 
       commit('SET_PERIOD', data);

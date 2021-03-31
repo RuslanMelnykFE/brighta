@@ -6,7 +6,11 @@
     <ul class="action-panel__filters-list filters-list">
       <li class="filters-list__item">
           <span class="filters-list__text">{{ period }}</span>
-          <button class="filters-list__btn-del" aria-label="Button delete">
+          <button
+            class="filters-list__btn-del"
+            aria-label="Button delete"
+            @click.prevent="deleteFilter"
+          >
             <span class="filters-list__icon-close"></span>
           </button>
       </li>
@@ -29,7 +33,7 @@ export default {
       date: 'date/PERIOD',
     }),
     period() {
-      if (!this.date) {
+      if (!Object.keys(this.date).length) {
         return '';
       }
 
@@ -52,6 +56,9 @@ export default {
       const day = date.getDate();
 
       return `${day}/${month}/${year}`;
+    },
+    deleteFilter() {
+      this.$store.dispatch('date/cahngePeriod', {});
     },
   },
 };
